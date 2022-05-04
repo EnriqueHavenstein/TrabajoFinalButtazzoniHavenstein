@@ -407,6 +407,8 @@ plt.show()
 
 """**RANDOM FOREST**"""
 
+from sklearn.ensemble import RandomForestClassifier
+
 model_randomf = RandomForestClassifier(random_state=11, n_estimators=200,
                                class_weight="balanced", max_features="log2")
 model_randomf.fit(X_train, y_train)
